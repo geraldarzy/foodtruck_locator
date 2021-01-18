@@ -1,0 +1,25 @@
+!#/usr/bin/env ruby
+
+require "./config/environment"
+
+
+
+
+
+
+
+newobj = Scrape_api.new
+newobj.make_dates
+newobj.make_locations
+newobj.make_trucks
+
+controller = Scrape_api::CLI.new
+controller.call
+
+
+
+
+
+
+
+
